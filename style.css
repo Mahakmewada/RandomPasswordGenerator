@@ -1,0 +1,102 @@
+/* Reset and base styles */
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Poppins', sans-serif;
+    box-sizing: border-box;
+} 
+
+body {
+    background: #002339;
+    color: #fff;
+} 
+
+/* Container styling */
+.container {
+    margin: 12% auto;
+    width: 90%;
+    max-width: 700px;
+}
+
+/* Heading */
+.container h1 {
+    font-weight: 500;
+    font-size: 45px;
+}
+
+.container h1 span {
+    color: #019f55;
+    border-bottom: 4px solid #019f55;
+    padding-bottom: 7px;
+}
+
+/* Password display box */
+.display {
+    width: 100%;
+    margin: 50px 0 30px 0;
+    background: #fff;
+    color: #333;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 26px 20px;
+    border-radius: 5px;
+}
+
+.display input {
+    border: 0;
+    outline: 0;
+    font-size: 24px;
+    flex: 1; /* take full width except the copy icon */
+}
+
+.display img {
+    width: 30px;
+    cursor: pointer;
+}
+
+/* Button styling */
+.container button {
+    border: 0;
+    outline: 0;
+    background: #019f55;
+    color: #fff;
+    font-size: 22px;
+    font-weight: 300;
+    display: flex;
+    align-items: center;
+    padding: 16px 26px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.container button img {
+    width: 28px;
+    margin-right: 10px;
+}
+
+/* Button hover effect */
+.container button:hover {
+    background: #018647;
+}
+
+/* Responsive adjustments for smaller screens */
+@media screen and (max-width: 500px) {
+    .container h1 {
+        font-size: 32px;
+    }
+    .display input {
+        font-size: 20px;
+    }
+    .container button {
+        font-size: 18px;
+        padding: 12px 18px;
+    }
+    .display img {
+        width: 25px;
+    }
+    .container button img {
+        width: 22px;
+    }
+}
